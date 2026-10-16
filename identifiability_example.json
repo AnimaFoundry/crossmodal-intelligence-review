@@ -1,0 +1,251 @@
+{
+  "scope": "exact hand-constructed linear algebra; no trained AI or physical measurements",
+  "model": "y = X theta, theta = (2,3), no intercept",
+  "cases": [
+    {
+      "name": "silent_channel",
+      "rows": 4,
+      "columns": 2,
+      "rank": 1,
+      "gram": [
+        [
+          "4",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "gram_determinant": "0",
+      "design": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "-1",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "target": [
+        "2",
+        "-2",
+        "2",
+        "-2"
+      ],
+      "alternative_theta": [
+        "2",
+        "99"
+      ],
+      "indistinguishable_from_theta_2_3": true
+    },
+    {
+      "name": "collinear_channels",
+      "rows": 4,
+      "columns": 2,
+      "rank": 1,
+      "gram": [
+        [
+          "4",
+          "4"
+        ],
+        [
+          "4",
+          "4"
+        ]
+      ],
+      "gram_determinant": "0",
+      "design": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "-1",
+          "-1"
+        ],
+        [
+          "1",
+          "1"
+        ],
+        [
+          "-1",
+          "-1"
+        ]
+      ],
+      "target": [
+        "5",
+        "-5",
+        "5",
+        "-5"
+      ],
+      "alternative_theta": [
+        "5",
+        "0"
+      ],
+      "indistinguishable_from_theta_2_3": true
+    },
+    {
+      "name": "crossed_variation",
+      "rows": 4,
+      "columns": 2,
+      "rank": 2,
+      "gram": [
+        [
+          "4",
+          "0"
+        ],
+        [
+          "0",
+          "4"
+        ]
+      ],
+      "gram_determinant": "16",
+      "design": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "1"
+        ],
+        [
+          "-1",
+          "-1"
+        ]
+      ],
+      "target": [
+        "5",
+        "-1",
+        "1",
+        "-5"
+      ]
+    },
+    {
+      "name": "sparse_but_spanning",
+      "rows": 4,
+      "columns": 2,
+      "rank": 2,
+      "gram": [
+        [
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "gram_determinant": "4",
+      "design": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "-1"
+        ]
+      ],
+      "target": [
+        "2",
+        "-2",
+        "3",
+        "-3"
+      ]
+    },
+    {
+      "name": "nearly_collinear",
+      "rows": 4,
+      "columns": 2,
+      "rank": 2,
+      "gram": [
+        [
+          "4",
+          "201/50"
+        ],
+        [
+          "201/50",
+          "20201/5000"
+        ]
+      ],
+      "gram_determinant": "1/2500",
+      "design": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "101/100"
+        ],
+        [
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "-101/100"
+        ]
+      ],
+      "target": [
+        "5",
+        "503/100",
+        "-5",
+        "-503/100"
+      ]
+    },
+    {
+      "name": "collinear_repeated_100_times",
+      "rows": 400,
+      "columns": 2,
+      "rank": 1,
+      "gram": [
+        [
+          "400",
+          "400"
+        ],
+        [
+          "400",
+          "400"
+        ]
+      ],
+      "gram_determinant": "0",
+      "alternative_theta": [
+        "5",
+        "0"
+      ],
+      "indistinguishable_from_theta_2_3": true,
+      "construction": "collinear_channels design repeated 100 times"
+    }
+  ],
+  "full_rank_exact_fit_gradient": [
+    "0",
+    "0"
+  ],
+  "label_noise_changes_design_rank": false,
+  "design_energy_matched": false,
+  "warning": "Rank does not establish causal identification, robustness or useful nonlinear representations."
+}

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this versioned critical review preprint; it has not been peer reviewed."
+type: article
+title: "From Synaesthetic Metaphor to Crossmodal Intelligence: Evidence, Identifiability, and Lessons from Evolution"
+authors:
+  - name: "AnimaFoundry"
+version: "1.0.0"
+date-released: 2026-10-16
+url: "https://github.com/AnimaFoundry/crossmodal-intelligence-review"
+license: CC-BY-4.0
+keywords:
+  - crossmodal learning
+  - synaesthetic metaphor
+  - identifiability
+  - sensor fusion
+  - world models
+  - mutation rate
+abstract: "A critical integrative review distinguishing sensory rhetoric and human synaesthesia from functional AI, connecting informative variation with identifiability, and examining bounded evolutionary analogies. Exact algebraic illustrations and an unperformed physical validation agenda accompany the synthesis."
